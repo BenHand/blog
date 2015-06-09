@@ -15,7 +15,7 @@ class BlogPostController < ApplicationController
 
   def create
     new_post = BlogPost.create(blog_post_params)
-    render 'show.html.erb', locals: { blog_posts: new_post }
+    redirect_to "/blog_post/#{new_post.id}"
   end
 
   def destroy
