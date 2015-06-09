@@ -22,19 +22,21 @@ ul{ padding: 0; };
 header,footer { text-align: $text-align-primary; };
 
 input#blog_posts_title{
-  min-width: 50%;
+  min-width: 30%;
   margin-bottom: 15px;
 
 };
-input#blog_posts_body{
-  min-width: 50%;
-  min-height: 350px;
-};
+// input#blog_posts_body{
+//   min-width: 50%;
+//   min-height: 350px;
+// };
 
 .create-box{ text-align: $text-align-primary; };
 
 .blog-posts{ text-align: $text-align-primary; };
 
 .delete-btn{ text-align: $text-align-primary; };
+
+.save-btn{ text-align: $text-align-primary; };
 
 .title-body{ padding-bottom: 10px; };

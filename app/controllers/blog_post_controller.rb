@@ -19,9 +19,12 @@ class BlogPostController < ApplicationController
   end
 
   def destroy
-    # id = params[:id].to_i
     BlogPost.destroy(params[:id].to_i)
     redirect_to '/blog_post'
+  end
+
+  def edit
+    render 'edit.html.erb', locals: { blog_posts: BlogPost.find(params[:id]) }
   end
 
   private
