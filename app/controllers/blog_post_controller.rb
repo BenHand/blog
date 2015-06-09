@@ -18,6 +18,12 @@ class BlogPostController < ApplicationController
     render 'show.html.erb', locals: { blog_posts: new_post }
   end
 
+  def destroy
+    id = params[:id].to_i
+    BlogPost.destroy(id)
+    redirect_to '/blog_post'
+  end
+
   private
 
   def blog_post_params
