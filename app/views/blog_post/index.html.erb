@@ -2,7 +2,7 @@
 <ul>
 <% blog_posts.each do |post| %>
   <li>
-  <%= render partial: 'blog_post', locals: { post: post } %>
+  <%= link_to "#{ render partial: 'blog_post', locals: { post: post } }", controller: "blog_post", action: "show", id: post.id %>
   </li>
 <% end %>
 </ul>
