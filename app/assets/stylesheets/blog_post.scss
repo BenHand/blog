@@ -1,3 +1,20 @@
 // Place all the styles related to the BlogPost controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+header,footer {
+  text-align: center;
+};
+
+input#blog_posts_title{
+  min-width: 50%;
+  margin-bottom: 15px;
+
+};
+input#blog_posts_body{
+  min-width: 50%;
+  min-height: 350px;
+};
+
+.create-box{
+  text-align: center;
+};

@@ -1,6 +1,14 @@
+<div class="create-box">
 <h1>blog posts new page</h1>
   <%= form_for(:blog_posts, url: '/blog_post', method: :post) do |f| %>
-    <%= f.text_field :title %>
-    <%= f.text_field :body %>
-    <%= f.submit "POST" %>
+    <div>
+      <%= f.text_field :title %>
+    </div>
+    <div>
+      <%= f.text_field :body %>
+    </div>
+    <p>
+      <%= f.submit "POST" %>
+    </p>
   <% end %>
+</div>
