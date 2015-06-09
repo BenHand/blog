@@ -27,6 +27,15 @@ class BlogPostController < ApplicationController
     render 'edit.html.erb', locals: { blog_posts: BlogPost.find(params[:id]) }
   end
 
+  def update
+    post = BlogPost.find(params[:id])
+    post.title = params[:blog_posts]['title']
+    post.body = params[:blog_posts]['body']
+    post.save!
+    updated_post = BlogPost.find(params[:id])
+    render 'show.html.erb', locals: { blog_posts: updated_post }
+  end
+
   private
 
   def blog_post_params

@@ -1,15 +1,16 @@
 <h1>blog post show page</h1>
-<%= form_for(:blog_posts, url: "/blog_post/#{params[:id]}", method: :delete) do |f| %>
+
   <div class="blog-posts">
     <%= render partial: 'blog_post', locals: { post: blog_posts } %>
   </div>
   <br>
+<%= form_for(:blog_posts, url: "/blog_post/#{params[:id]}", method: :delete) do |f| %>
 <p class="delete-btn">
   <%= f.submit "DELETE", data: { confirm: "Are you sure? This cannot be undone." } %>
 </p>
 <% end %>
 <%= form_for(:blog_posts, url: "/blog_post/#{params[:id]}/edit", method: :get) do |f| %>
-  <p>
+  <p class="edit-btn">
     <%= f.submit "EDIT" %>
   </p>
 <% end %>

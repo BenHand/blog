@@ -1,10 +1,10 @@
 <h1>Edit Page</h1>
 <%= form_for(:blog_posts, url: "/blog_post/#{params[:id]}", method: :put) do |f| %>
   <div class="blog-posts">
-    <%= f.text_field :title %>
+    <%= f.text_field :title, value: "#{blog_posts.title}" %>
   </div>
   <div class="blog-posts">
-    <%= f.text_area :body, :cols => "100", :rows => "27" %>
+    <%= f.text_area :body, :cols => "100", :rows => "27", value: "#{blog_posts.body}" %>
   </div>
   <p class="save-btn">
     <%= f.submit "SAVE" %>
