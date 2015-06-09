@@ -1,2 +1,5 @@
-Title: <%= post.title %>
-Post: <%= post.body %>
+<%= link_to "#{post.title}", controller: "blog_post", action: "show", id: post.id %>
+<br>
+<br>
+<%= post.body %>
+

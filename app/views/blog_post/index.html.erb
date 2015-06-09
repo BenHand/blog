@@ -1,8 +1,7 @@
 <h1>Blog Posts Index Page</h1>
-<ul>
 <% blog_posts.each do |post| %>
-  <li>
-  <%= link_to "#{ render partial: 'blog_post', locals: { post: post } }", controller: "blog_post", action: "show", id: post.id %>
-  </li>
+  <div class="blog-posts">
+    <%= render partial: 'blog_post', locals: { post: post } %>
+  </div>
+  <br>
 <% end %>
-</ul>

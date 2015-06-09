@@ -1,13 +1,19 @@
 // Place all the styles related to the BlogPost controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$text-align-primary: center;
+a{ padding: 10px; };
 
-a{
-  padding: 10px;
+h1{ text-align: $text-align-primary; };
+
+h2{
+  margin-bottom: 5px;
+  text-align: $text-align-primary;
 };
-header,footer {
-  text-align: center;
-};
+
+ul{ padding: 0; };
+
+header,footer { text-align: $text-align-primary; };
 
 input#blog_posts_title{
   min-width: 50%;
@@ -19,6 +25,8 @@ input#blog_posts_body{
   min-height: 350px;
 };
 
-.create-box{
-  text-align: center;
-};
+.create-box{ text-align: $text-align-primary; };
+
+.blog-posts{ text-align: $text-align-primary; };
+
+.title-body{ padding-bottom: 10px; };
