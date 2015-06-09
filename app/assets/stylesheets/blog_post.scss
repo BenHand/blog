@@ -2,10 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $text-align-primary: center;
+$background-color-primary: #4ACBFF;
+$background-color-secondary: blue;
 
-// body{
-
-// };
 
 a{ padding: 10px; };
 
@@ -16,21 +15,19 @@ h2{
   text-align: $text-align-primary;
 };
 
-ul{ padding: 0; };
-
 header,footer {
   text-align: $text-align-primary;
-  background: blue;
+  background: $background-color-primary;
 };
 footer {
   text-align: $text-align-primary;
-  background: #4ACBFF;
+  background: $background-color-secondary;
 };
 
 body{
   margin: 0;
-  background: linear-gradient(blue, #4ACBFF);
-  border: solid 4px blue;
+  background: linear-gradient($background-color-primary, $background-color-secondary);
+  border: solid 4px $background-color-primary;
 };
 
 input#blog_posts_title{
@@ -39,11 +36,26 @@ input#blog_posts_title{
 
 };
 
-.create-box{ text-align: $text-align-primary; };
+.create-box{
+  text-align: $text-align-primary;
+  opacity: .6;
+};
 
 .blog-posts{
   text-align: $text-align-primary;
   margin: 40px;
+  background: white;
+  opacity: .4;
+  border-radius: 40px;
+};
+
+.post-content{
+  margin: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
 };
 
 .delete-btn{ text-align: $text-align-primary; };

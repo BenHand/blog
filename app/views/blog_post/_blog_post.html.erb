@@ -1,5 +1,9 @@
-<%= link_to "#{post.title}", controller: "blog_post", action: "show", id: post.id %>
-<br>
-<br>
-<%= post.body %>
-
+<div class="post-content">
+  <%= link_to "#{post.title}", controller: "blog_post", action: "show", id: post.id %>
+    <br>
+    <br>
+  <%= post.body %>
+  <br>
+  <% time = post.created_at.to_s %>
+  <%= time[0,10] %>
+</div>
