@@ -4,7 +4,7 @@
     <%= render partial: 'blog_post', locals: { post: blog_posts } %>
   </div>
   <br>
-<p>
-  <%= f.submit "DELETE" %>
+<p class="delete-btn">
+  <%= f.submit "DELETE", data: { confirm: "Are you sure? This cannot be undone." } %>
 </p>
 <% end %>
