@@ -4,8 +4,7 @@
 $text-align-primary: center;
 
 // body{
-//   background-image: url(cayman_islands.jpg);
-//   background-size: cover;
+
 // };
 
 a{ padding: 10px; };
@@ -19,7 +18,16 @@ h2{
 
 ul{ padding: 0; };
 
-header,footer { text-align: $text-align-primary; };
+header,footer {
+  text-align: $text-align-primary;
+  background: #4ACBFF;
+};
+
+body{
+  margin: 0;
+  background-image: url(cayman_islands.jpg);
+  background-size: cover;
+};
 
 input#blog_posts_title{
   min-width: 30%;
