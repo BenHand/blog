@@ -7,7 +7,7 @@ $font-family-primary: "Gill Sans Extrabold", Helvetica, sans-serif;
 
 nav{
   div{
-    background: $background-color-secondary;
+    background: $background-color-primary;
     width: 295px;
     margin: 8px auto;
     border-radius: 0 0 30px 30px;
@@ -60,7 +60,8 @@ header{
 
 footer{
   text-align: $text-align-primary;
-  background: $background-color-secondary;
+  background: $background-color-primary;
+  color: $text-color-primary;
 };
 
 body{
@@ -85,8 +86,7 @@ input#blog_posts_title{
 .blog-posts{
   text-align: $text-align-primary;
   margin: 40px;
-  background: white;
-  opacity: .7;
+  background: RGBA(219, 248, 255, 0.65);
   border-radius: 40px;
 };
 
