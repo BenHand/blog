@@ -1,8 +1,8 @@
 class BlogPostController < ApplicationController
 
   def index
-    all_posts = BlogPost.all
-    render 'index.html.erb', locals: { blog_posts: all_posts.reverse }
+    @all_posts = BlogPost.all.reverse
+    # render 'index.html.erb', locals: { blog_posts: all_posts.reverse }
   end
 
   def show

@@ -1,5 +1,5 @@
 <h1>My Blog Posts</h1>
-<% blog_posts.each do |post| %>
+<% @all_posts.each do |post| %>
   <div class="blog-posts">
     <%= render partial: 'blog_post', locals: { post: post } %>
   </div>

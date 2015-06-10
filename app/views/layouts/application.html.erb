@@ -6,14 +6,15 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<header>
-  <nav>
-    <a href="/welcome">Home</a>
-    <a href="/about">About</a>
-    <a href="/blog_post">All Posts</a>
-    <a href="/blog_post/new">New Post</a>
-  </nav>
-</header>
+<header>Benjamin Hands First Attempt @ a Blog Site</header>
+<nav>
+  <div>
+    <%= link_to 'Home', root_path %>
+    <%= link_to 'About', about_path %>
+    <%= link_to 'All Posts', blog_post_index_path %>
+    <%= link_to 'New Post', new_blog_post_path %>
+  </div>
+</nav>
     <body>
 
       <%= yield %>

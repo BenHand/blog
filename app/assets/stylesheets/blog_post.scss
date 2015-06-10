@@ -1,9 +1,22 @@
 $text-align-primary: center;
 $background-color-primary: black;
-$background-color-secondary: blue;
+$background-color-secondary: #4D7D97;
 $text-color-primary: white;
 $font-family-primary: "Gill Sans Extrabold", Helvetica, sans-serif;
 
+
+nav{
+  div{
+    background: $background-color-secondary;
+    width: 295px;
+    margin: 8px auto;
+    border-radius: 0 0 30px 30px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    };
+};
 
 a{
   padding: 10px;
@@ -17,22 +30,35 @@ h1{
   color: $text-color-primary;
   font-size: 40px;
   font-family: $font-family-primary;
+  padding-top: 30px;
 };
 
-h2{
-  margin-bottom: 5px;
+// h2{
+//   // margin-bottom: 5px;
+//   text-align: $text-align-primary;
+//   color: $text-color-primary;
+//   text-shadow: 2px 2px black;
+//   font-size: 40px;
+//   font-family: $font-family-primary;
+//   // padding-top: 30px;
+// };
+
+header{
   text-align: $text-align-primary;
   color: $text-color-primary;
-  text-shadow: 2px 2px black;
-  font-size: 40px;
-  font-family: $font-family-primary;
+  width: 650px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: $background-color-secondary;
+  border-radius: 0 0 40px 40px;
+  font-size: 30px;
+  z-index: 1000;
 };
 
-header,footer {
-  text-align: $text-align-primary;
-  background: $background-color-primary;
-};
-footer {
+footer{
   text-align: $text-align-primary;
   background: $background-color-secondary;
 };
@@ -42,7 +68,6 @@ body{
   background: linear-gradient($background-color-primary, $background-color-secondary);
   background-image: asset-url("cayman_islands.jpg");
   background-size: cover;
-
 };
 
 input#blog_posts_title{
