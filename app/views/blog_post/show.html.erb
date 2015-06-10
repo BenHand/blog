@@ -1,7 +1,9 @@
-<h1>blog post show page</h1>
+<h1><%= blog_posts.title.titleize %></h1>
 <%= form_for(:blog_posts, url: "/blog_post/#{params[:id]}", method: :delete) do |f| %>
   <div class="blog-posts">
-    <%= render partial: 'blog_post', locals: { post: blog_posts } %>
+  <div class="post-content">
+    <%= blog_posts.body %>
+    </div>
   </div>
   <br>
 <p class="delete-btn">
