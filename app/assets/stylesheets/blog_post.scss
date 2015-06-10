@@ -2,17 +2,33 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $text-align-primary: center;
-$background-color-primary: #4ACBFF;
+$background-color-primary: black;
 $background-color-secondary: blue;
+$text-color-primary: white;
+$font-family-primary: "Gill Sans Extrabold", Helvetica, sans-serif;
 
 
-a{ padding: 10px; };
+a{
+  padding: 10px;
+  color: $text-color-primary;
+};
 
-h1{ text-align: $text-align-primary; };
+h1{
+  text-align: $text-align-primary;
+  color: $text-color-primary;
+  text-shadow: 2px 2px black;
+  color: $text-color-primary;
+  font-size: 40px;
+  font-family: $font-family-primary;
+};
 
 h2{
   margin-bottom: 5px;
   text-align: $text-align-primary;
+  color: $text-color-primary;
+  text-shadow: 2px 2px black;
+  font-size: 40px;
+  font-family: $font-family-primary;
 };
 
 header,footer {
@@ -27,7 +43,10 @@ footer {
 body{
   margin: 0;
   background: linear-gradient($background-color-primary, $background-color-secondary);
-  border: solid 4px $background-color-primary;
+  // border: solid 4px $background-color-primary;
+  background: url(cayman_islands.jpg);
+  background-size: cover;
+
 };
 
 input#blog_posts_title{
@@ -37,16 +56,22 @@ input#blog_posts_title{
 };
 
 .create-box{
+  padding-top: 40px;
   text-align: $text-align-primary;
-  opacity: .6;
+  opacity: .8;
 };
 
 .blog-posts{
   text-align: $text-align-primary;
   margin: 40px;
   background: white;
-  opacity: .4;
+  opacity: .7;
   border-radius: 40px;
+};
+
+.blog-posts-edit{
+  text-align: $text-align-primary;
+  opacity: .8;
 };
 
 .post-content{
@@ -56,6 +81,10 @@ input#blog_posts_title{
   color: black;
   font-weight: bold;
   font-size: 18px;
+
+  a{
+    color: black;
+   };
 };
 
 .delete-btn{ text-align: $text-align-primary; };
@@ -65,3 +94,9 @@ input#blog_posts_title{
 .edit-btn{ text-align: $text-align-primary; };
 
 .title-body{ padding-bottom: 10px; };
+
+.welcome-home, .welcome-about, .blogposts-new{
+  text-align: $text-align-primary;
+  min-height: 595px;
+  min-width: 1250px;
+};

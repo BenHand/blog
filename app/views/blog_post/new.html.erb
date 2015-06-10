@@ -1,14 +1,16 @@
 <h2>Create a New Blog Post</h2>
-<div class="create-box">
-  <%= form_for(:blog_posts, url: '/blog_post', method: :post) do |f| %>
-    <div>
-      <%= f.text_field :title %>
-    </div>
-    <div>
-      <%= f.text_area :body, :cols => "100", :rows => "27" %>
-    </div>
-    <p>
-      <%= f.submit "POST" %>
-    </p>
-  <% end %>
+<div class="blogposts-new">
+  <div class="create-box">
+    <%= form_for(:blog_posts, url: '/blog_post', method: :post) do |f| %>
+      <div>
+        <%= f.text_field :title %>
+      </div>
+      <div>
+        <%= f.text_area :body, :cols => "100", :rows => "27" %>
+      </div>
+      <p>
+        <%= f.submit "POST" %>
+      </p>
+    <% end %>
+  </div>
 </div>
