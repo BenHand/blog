@@ -40,7 +40,7 @@ footer {
 body{
   margin: 0;
   background: linear-gradient($background-color-primary, $background-color-secondary);
-  background-image: url(../../public/images/cayman_islands.jpg);
+  background-image: asset-url("cayman_islands.jpg");
   background-size: cover;
 
 };
