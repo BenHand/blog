@@ -81,10 +81,11 @@ input#blog_posts_title{
   color: black;
   font-weight: bold;
   font-size: 18px;
-
   a{
-    color: black;
-   };
+    color: red;
+    font-size: 30px;
+    text-decoration: none;
+  };
 };
 
 .delete-btn{ text-align: $text-align-primary; };
@@ -99,4 +100,7 @@ input#blog_posts_title{
   text-align: $text-align-primary;
   min-height: 595px;
   min-width: 1250px;
+};
+.welcome-links{
+  font-size: 20px;
 };
